@@ -73,4 +73,8 @@ console.log(password);
     if(!passwordMatches(email, password)){
       console.log("Your password is incorrect");
     }
-    } 
+    } else {
+      if (isValidPassword(password) && isValidEmail(email)){
+        console.log("Welcome! Thanks for signing up!")
+      } //does it matter if i put them backwards for 
+    }   // coding purposes? because it still runs fine.
