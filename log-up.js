@@ -77,4 +77,9 @@ console.log(password);
       if (isValidPassword(password) && isValidEmail(email)){
         console.log("Welcome! Thanks for signing up!")
       } //does it matter if i put them backwards for 
-    }   // coding purposes? because it still runs fine.
+    else if (!isValidPassword(password)) { // coding purposes? because it still runs fine. 
+      console.log("That's an invalid password! Your password must be longer than 8 characters.")
+    } else if (!isValidEmail(email)){
+      console.log("That's an invalid email! Make sure you have a character before the @ sign.")
+    }
+  }
