@@ -67,5 +67,10 @@ console.log(email);
 console.log(password);
 
   if (passwordMatches(email,password)){
-    console.log("Hey User! Your now logged in.");
+    console.log("Hey, Welcome Back! Your now logged in.");
   }
+  if (isRegisteredUser(email)){
+    if(!passwordMatches(email, password)){
+      console.log("Your password is incorrect");
+    }
+    } 
