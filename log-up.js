@@ -60,3 +60,12 @@ const {
 
 // Being sure to do all that's outlined above, write
 // your code below!
+
+const email = getInput(1);
+const password = getInput(2);
+console.log(email);
+console.log(password);
+
+  if (passwordMatches(email,password)){
+    console.log("Hey User! Your now logged in.");
+  }
